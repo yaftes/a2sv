@@ -12,6 +12,6 @@ class Solution:
                 stack_b.pop()
             elif char != '#':
                 stack_b.append(char)
-        return stack_a == stack_b
+        return "".join(stack_a) == "".join(stack_b)
 
         
