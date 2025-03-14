@@ -10,7 +10,7 @@ class Solution:
             new_node = TreeNode(val)
             root = new_node
             return root
-        def hs(root):
+        def finder(root):
             if root.left is None and root.val > val:
                 new_node = TreeNode(val)
                 root.left = new_node
@@ -23,7 +23,7 @@ class Solution:
                 return self.insertIntoBST(root.left,val)
             else:
                 return self.insertIntoBST(root.right,val)
-        hs(root)
+        finder(root)
         return root
        
 
