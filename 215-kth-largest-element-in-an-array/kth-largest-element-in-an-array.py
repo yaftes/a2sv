@@ -1,8 +1,6 @@
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
+        return nlargest(k,nums)[k - 1]
         
-        return nlargest(k,nums)[::-1][0]
-
-
         
         
